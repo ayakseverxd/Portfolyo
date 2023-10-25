@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="statik/css/style.css">
+    <script src="statik/js/jquery.js"></script>
+    <title>İlk Projemiz</title>
+</head>
+
+<body>
+    <h1>Portfolyo</h1>
+
+    <body>
+
+        <nav class="menu">
+            <ul>
+                <li id="1"><a href="#">Home</a></li>
+                <li><a href="#">Menu1</a>
+                    <ul>
+                        <li><a href="#">Deniz</a></li>
+                        <li><a href="#">Durmuş</a></li>
+                        <li><a href="#">Kurt</a></li>
+                    </ul>
+                </li>
+                <li id="2"><a href="#">Menu2</a>
+               <li><a href="#" id="3">Menu3</a>
+                    <ul>
+                      <li><a href="#">Kıbrıs</a></li>
+                        <li><a href="#">Girne</a></li>
+                    </ul>
+              </li>
+                <li id="4"><a href="#">Menu4</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+           <div class="myimgdivshowhide">
+                <img src="statik/img/p.jpg" alt="display image on button click" class="img-responsive img-thumbnail" />
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function () {
+           $("#1").click(function () {
+                alert("Bu Menüye Tıklandı.");
+
+            });
+
+            $("#2").click(function () {
+                $('.myimgdivshowhide').show();
+            });
+            $("#4").click(function () {
+                $('.myimgdivshowhide').hide();
+            });
+
+            $("#3").click(function(){
+                $('.myimgdivshowhide').toggle();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

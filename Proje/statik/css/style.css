@@ -1,0 +1,49 @@
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+   
+  .menu li{
+    float: left;
+    position: relative;
+    width: 120px;
+  }
+   
+  .menu ul li ul{
+    display: none;
+  }
+
+  .menu ul li a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 5px;
+  }
+   
+  .menu ul li ul li a{
+    text-align: left;
+    padding: 5px;
+    font-size: .8em;
+  }
+h1 {
+    text-align: center;
+
+}
+.myimgdivshowhide{
+	display:none;
+  text-align: center;
+}
+.myimg{
+	display:none;
+}
+.container{
+    padding:30px;
+    background-color: aqua;
+    margin:650px;
+    width:450px;
+    height:200px;
+    margin-top: 350px;
+}
